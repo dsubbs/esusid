@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "yeOseliaBot"
+version = "0.1.0"
+description = "yeOseliaBot is a Telegram bot for managing co-living expenses"
+authors = ["Danyil Subotin <danyilsubotin@gmail.com>"]
+license = "GNL-3.0"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+aiogram = "^3.4.1"  # Asynchronous framework for Telegram Bot API
+asyncpg = "^0.29.0"  # Asynchronous PostgreSQL client
+SQLAlchemy = "^2.0.28"  # Database toolkit and ORM
+alembic = "^1.13.1"  # Database migrations tool
+python-dotenv = "1.0.1"  # To manage environment variables
+pydantic-settings = "^2.2.1"  # To manage settings
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.1.1"
+black = "^24.3.0"
+isort = "^5.7.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
